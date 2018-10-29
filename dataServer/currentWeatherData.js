@@ -34,7 +34,7 @@ router.get('/weather/current/:city/:country', function (req, res) {
             if (response.statusCode == 200) {
                 data['responseCode'] = bodyJSON.cod;
                 data['message'] = bodyJSON.sys.message;
-                data['timeStamp'] = bodyJSON.dt;                
+                data['timeStamp'] = bodyJSON.dt;                 
                 data['name'] = bodyJSON.name;
                 data['country'] = bodyJSON.sys.country;
                 

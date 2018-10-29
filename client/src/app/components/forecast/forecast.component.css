@@ -1,0 +1,25 @@
+.weather-forecast {
+    display: block;
+    width: 280px;
+    border: 1px solid #034488;
+    text-align: center;
+    background-color: #ccdde8;
+    color: #034488;
+    padding: 0;
+    font-size: 16px;
+}
+
+.forecast-header {
+    background-color: #034488;
+    color: white;
+    padding: 10px;
+}
+
+.forecast-item {
+    border-bottom: 1px solid #034488;
+    padding: 5px;
+}
+
+.forecast-item:last-child {
+    border-bottom: none;
+}

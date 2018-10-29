@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<app-user-input (inputChanged)="onInputChange($event)"></app-user-input>
+
+<app-current class="container" 
+    *ngIf="( currentData !== undefined )" 
+    [data]="currentData"></app-current>
+
+<app-forecast class="container" 
+    *ngIf="( forecastData !== undefined )" 
+    [data]="forecastData"></app-forecast>
+
+<div *ngIf="messages.length > 0" class="messages">
+  <ul class="list-group">
+    <li *ngFor="let message of messages" class="list-group-item">{{message}}</li>
+  </ul>
+</div>

@@ -1,0 +1,28 @@
+<div class="container weather-forecast">
+  <div class="forecast-header">
+      <h3>{{title}}</h3>
+  </div>
+  
+  <div class="forecast-item" *ngFor = "let forecast of data.forecast">
+    <div class="row">
+      <div class="col-12 date">
+          <p>
+              {{forecast.dt * 1000 | date: 'EE, HH:mm, dd/MM/yyyy'}}
+          </p>
+      </div>
+    </div>
+      
+    <div class="row">
+        <div class="col-4 description">
+            <p>{{forecast.main}}</p>
+        </div>
+        <div class="col-4 temp">
+            <p>{{forecast.temp | number: '1.0-0'}} &deg;C</p>
+        </div>
+        <div class="col-4 wind">
+            <p>{{forecast.wind | number: '1.1-1'}} m/s</p>
+        </div>
+    </div>
+  </div>
+
+</div>

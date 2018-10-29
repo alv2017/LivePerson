@@ -48,7 +48,7 @@ router.get('/weather/forecast/:city/:country', function (req, res) {
                     forecastItem['temp'] = element.main.temp;
                     forecastItem['pressure'] = element.main.pressure;
                     forecastItem['humidity'] = element.main.humidity;
-                    forecastItem['wind'] = element.wind.spped;
+                    forecastItem['wind'] = element.wind.speed;
                     forecastItem['rain'] = element.rain;
 
                     data.forecast.push(forecastItem);

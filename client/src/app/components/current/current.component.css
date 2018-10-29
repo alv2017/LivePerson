@@ -1,0 +1,45 @@
+div.container {
+    width: 280px;
+    border: 1px solid #034488;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #034488; 
+    color: white;
+}
+
+.container p {
+    padding: 0;
+    margin: 5px;
+}
+
+.location p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+.temp p {
+    font-size: 25px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px
+}
+
+.description p {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.current-time p {
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+div.current-header {
+    border-bottom: 3px solid #ccdde8;;
+}
+
+div.location {
+    text-align: left;
+}

@@ -1,0 +1,19 @@
+form {
+    margin: 20px;
+    padding: 10px;
+}
+
+form .form-group {
+    margin: 15px;
+}
+
+form input {
+    margin: 5px;
+    border-color: 2px solid #ccdde8;
+}
+
+.btn-submit-custom {
+    width: 120px;
+    background-color: #1b2a49;
+    color: white;
+}

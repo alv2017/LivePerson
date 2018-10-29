@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row current-header">
+      <div class="col-7 location">
+          <p>{{data.name}}, {{data.country}}</p>
+      </div>
+      <div class="col-5 current-time">
+          <p>
+             {{data.timeStamp * 1000 | date: 'EE, HH:mm'}}<br>
+             {{data.timeStamp * 1000 | date: 'dd/MM/yyyy'}}</p>
+      </div>
+  </div>
+  <div class="row current-weather">
+      <div class="col-5 temp">
+          <p>{{data.weather.temp | number: '1.0-0'}} &deg;C</p>
+      </div>
+      <div class="col-7 description">
+          <p>{{data.weather.description | titlecase}}<br/>
+          {{data.weather.wind | number: '1.1-1'}} m/s</p>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container">
+    <form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="form-inline">
+
+        <div class="row">
+            <div class="form-group">City: 
+                <input 
+                      id="city" type="text" size="20"
+                      formControlName="city" 
+                      class="form-control" 
+                      [ngClass]="{ 'is-invalid': submitted && f.city.errors }" />
+                <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                    <div *ngIf="f.city.errors.required">City name is required</div>
+                </div>
+              </div>
+        
+            <div class="form-group">Country:  
+                <input 
+                        id="country" type="text" size="2"
+                        formControlName="country"                   
+                        class="form-control" 
+                        [ngClass]="{ 'is-invalid': submitted && country.errors }" />
+                <div *ngIf="submitted && country.errors" class="invalid-feedback">
+                    <div *ngIf="country.errors.required">Country code is required</div>
+                    <div *ngIf="country.errors.minlength || country.errors.maxlength">
+                        Please provide 2 character country code
+                    </div>
+                </div>
+            </div>
+        
+            <div class="form-group">Forecast: 
+                <input 
+                        id="forecast" type="checkbox" 
+                        formControlName="forecast" 
+                        class="form-control" />
+            </div>
+        
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-submit-custom"/>
+            </div>
+        </div>
+        
+    </form>
+</div>
